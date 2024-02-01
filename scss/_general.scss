@@ -4,6 +4,7 @@ $os: "Open Sans", sans-serif;
 $while: #fff;
 $yellow: #e8c300;
 $color:#000;
+$white-opacity: rgba(255, 255, 255, 0.5);
 
 $wrap:1470px;
 $container: 1200px;
@@ -15,6 +16,18 @@ $mc: 0 auto;
   flex-wrap: wrap;
   justify-content: $js;
   align-items: $ai;
+}
+
+@mixin line{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: $yellow;
+  border-radius: 50px;
+  margin: $mc;
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 
 body{
@@ -33,4 +46,9 @@ body{
 .container{
   max-width: $container;
   margin: $mc;
+}
+
+svg{
+  width: 100%;
+  height: 100%;
 }

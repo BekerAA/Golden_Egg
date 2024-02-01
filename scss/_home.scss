@@ -29,3 +29,110 @@
 .top-menu__list{
   @include flex(center, center);
 }
+
+.top-menu__item{
+  margin: 0 5px;
+  a{
+    text-transform: uppercase;
+    color: $while;
+    font-size: 12px;
+    font-weight: 700;
+    display: block;
+    padding: 40px 25px;
+    transition: 0.3s;
+    &:hover{
+      color: $yellow;
+      border-top: 5px solid $yellow;
+    }
+  }
+}
+
+.logo{
+  margin: 0 60px;
+  img{
+    position: relative;
+    top: 15px;
+  }
+}
+
+.home__container-center{
+  @include flex(space-between, flex-start);
+  margin-top: 175px;
+}
+
+.socials{
+  width: 62px;
+  margin-top: 40px;
+  a{
+    display: block;
+    height: 62px;
+    border-radius: 50%;
+    transition: 0.3;
+    margin-bottom: 20px;
+    &:hover{
+      background: $yellow;
+    }
+  }
+}
+
+.home__text{
+  text-align: center;
+  h6{
+    color: $while;
+    font-size: $text;
+  }
+  h1{
+    color: $yellow;
+    font-family: $kurale;
+    font-size: 72px;
+    margin-top: 25px;
+    &::after{
+    @include line;
+    }
+  }
+}
+
+.home__btns{
+  margin-bottom: 80px;
+  a{
+    display:  inline-block;
+    width: 260px;
+    height: 60px;
+    line-height: 60px;
+    color: $while;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+    text-transform: uppercase;
+    border: 1px solid $white-opacity;
+    margin: 0 20px 20px;
+    &:hover{
+      background: $yellow;
+    }
+  }
+
+  .btn__order{
+    background: $yellow;
+    border: none;
+    &:hover{
+      background: darken($yellow, 10%);
+    }
+  }
+}
+
+.arrow__about{
+  display: block;
+  width: 62px;
+  height: 62px;
+  margin: $mc;
+}
+
+.time__work{
+  color: $while;
+  font-weight: 700;
+  font-size: 12px;
+  transform: rotate(-90deg);
+  margin-top: 130px;
+  margin-left: -75px;
+}
